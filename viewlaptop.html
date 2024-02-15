@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+   <title>Laptops</title>
+</head>
+<body>
+       <table border="1" style="color: blue; border-collapse: collapse; background-color: #333333;">
+    <tr>
+        <th style="padding: 10px;">Id</th>
+        <th style="padding: 10px;">Name</th>
+    </tr>
+    <tr th:each="laptop : ${laptop}">
+        <td style="padding: 10px; color: Orange; font-weight: bold; " th:text="${laptop.id}"></td>
+        <td style="padding: 10px; color: red; font-weight: bold;" th:text="${laptop.name}"></td>
+    </tr>
+</table>
+       
+</body>
+</html>
